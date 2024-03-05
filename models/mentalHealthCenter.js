@@ -9,14 +9,14 @@ import { Schema } from "mongoose";
 
 const centerSchema = new Schema({
   name: String,
-  programName: String,
+  programName: { type: String, required: false },
   street: String,
-  room: String,
+  room: { type: String, required: false },
   city: String,
   zip: String,
   phone: String,
-  website: String,
-  militaryServices: String,
+  website: { type: String, required: false },
+  militaryServices: { type: String, required: false },
 });
 
 export default mongoose.model("centers", centerSchema);

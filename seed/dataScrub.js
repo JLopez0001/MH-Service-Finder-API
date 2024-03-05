@@ -1,6 +1,11 @@
 import services from "./serviceFinder.json" assert { type: "json" };
 import { promises as fsPromises } from "fs";
 
+/*
+  If data has military service it will show as "1" 
+  if it doesn't it will not show at all
+*/
+
 let mentalHealthServices = services.map((item) => {
   const service = {};
   service.name = item.name_1;
