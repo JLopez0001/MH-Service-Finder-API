@@ -3,6 +3,7 @@ import db from "./db/connection.js";
 import cors from "cors";
 import logger from "morgan";
 import chalk from "chalk";
+import routes from "./routes/index.js";
 
 const app = express();
 
