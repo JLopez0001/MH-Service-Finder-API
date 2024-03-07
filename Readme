@@ -1,0 +1,32 @@
+# Mental Health Clinic Finder API
+
+## Overview
+
+The Mental Health Clinic Finder API provides access to a comprehensive database of mental health clinics around NYC. It allows users to search for clinics and access detailed information about each clinic, including the name, website,location and more. This API is designed to help individuals find the right mental health center based on where they are.
+
+### Introduction
+
+This is a free to use API that was made with https://data.cityofnewyork.us/Health/Mental-Health-Service-Finder-Data/8nqg-ia7v/data_preview. There is no API Key. Follow along with the guided URLs below to retrieve the centers.
+
+### Getting Started
+
+### API Endpoints
+
+| HTTP Verbs | Endpoints               | Action                           |
+| ---------- | ----------------------- | -------------------------------- |
+| GET        | /api/centers            | Gets all centers                 |
+| GET        | /api/centers/:centerId  | Gets specific center based on id |
+| POST       | /api/centers/add-center | Create a Mental Health Center    |
+| PUT        | /api/centers/:centerId  | Update specific Center           |
+| DELETE     | /api/centers/:centerId  | To delete a single Center        |
+
+### Technologies Used
+
+- [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
+- [ExpressJS](https://www.expresjs.org/) This is a NodeJS web application framework.
+- [MongoDB](https://www.mongodb.com/) This is a free open source NOSQL document database with scalability and flexibility. Data are stored in flexible JSON-like documents.
+- [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
+
+### License
+
+This project is available for use under the MIT License.
