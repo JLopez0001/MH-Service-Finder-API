@@ -15,6 +15,8 @@ const centerSchema = new Schema({
   city: String,
   zip: String,
   phone: String,
+  long: String,
+  lat: String,
   website: { type: String, required: false },
   militaryServices: { type: String, required: false },
 });

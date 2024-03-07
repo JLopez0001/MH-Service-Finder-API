@@ -1,4 +1,4 @@
-import services from "./serviceFinder.json" assert { type: "json" };
+import services from "./originalData.json" assert { type: "json" };
 import { promises as fsPromises } from "fs";
 
 /*
@@ -16,6 +16,8 @@ let mentalHealthServices = services.map((item) => {
   service.zip = item.zip;
   service.phone = item.phone;
   service.website = item.website;
+  service.long = item.longitude;
+  service.lat = item.latitude;
   service.militaryServices = item.filter_military;
   return service;
 });
